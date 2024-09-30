@@ -1,0 +1,95 @@
+.addContainer{
+    background-image: url(https://howtoeat.ru/assets/images/slider/basic-2023.png);
+    height: 100vh;
+    padding-bottom: 100px;
+    width: 100%;
+}
+.innerRgba{
+    height: 100vh;
+    padding-bottom: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 30px;
+}
+.form{
+    padding-bottom: 100px;
+}
+.input{
+ border: gray;
+ border-bottom: 1px solid gray;
+
+}
+.formRules{
+   text-align: center;
+   font-weight: bold;
+   color: #F4A900;
+}
+.rulesDesc{
+    text-align: center;
+    margin: 20px;
+    font-size: 17px;
+}
+.rules{
+margin: 10px auto;
+width: 700px;
+}
+.formAdd{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 30px;
+}
+.formIngred{
+    border: 1px solid #F4A900;
+    min-width: 200px;
+    min-height: 200px;
+    padding: 30px;
+}
+.formData{
+    border: 1px solid black;
+    min-width: 200px;
+    min-height: 200px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border: 1px solid #F4A900;
+    border-radius: 10px;
+}
+.formIngred{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+.ingredItem{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.textarea{
+    padding: 7px;
+    font-size: 16px;
+}
+.input:focus{
+    box-shadow: 2px 2px 2px 2px #F4A900;
+    outline: none;
+}
+@media (max-width: 932px){
+   .rules{
+    width: 60%;
+    margin: 0 auto;
+   }
+   .formAdd{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .formData{
+    margin: 0 auto;
+    min-width: 200px;
+   }
+   .formIngred{
+    margin: 0 auto;
+    min-width: 200px;
+   }
+}

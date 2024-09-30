@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.header{
+  width: 100%;
+  padding: 30px 0 30px 0;
+}
+.logo{
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-size: 46px;
+    color: #F4A900;
+    text-decoration: none;
+}
+.header-container{
+    display: flex;
+    justify-content: space-around;
+}
+.burger1{
+  display: none;
+}
+.menuHead{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+  margin-top: 20px;
+  color: #5A5a5A;
+  font-weight: 600;
+}
+.span{
+  font-size: 17px;
+}
+.link{
+    text-decoration: none;
+    color:  #5A5a5A;
+    font-weight: 600;
+}
+.link:hover{
+  color:#F4A900
+}
+@media(max-width:900px){
+  .menuHead{
+    display: none;
+  }
+  .burger1{
+    display: block;
+    margin-top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .menu{
+    width: 80%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #F4A900;
+  }
+  .menu1{
+  width: 200px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  height: 400px;
+  }
+  .closeX{
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  }

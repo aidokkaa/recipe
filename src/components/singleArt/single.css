@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+}
+  .image{
+      width: 100%;
+      height: 300px;
+  }
+  .tDesc{
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .items{
+    width: 260px;
+}
+.item{
+  text-align: center;
+}
+.h{
+    margin: 40px;
+}
+.itemImg{
+    width: 100%;
+}
+  .single{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    gap: 40px;
+    margin:50px auto;
+  }
+  .singleArt{
+    width: 700px;
+  }
+  .singleText{
+    margin-top: 30px;
+    line-height: 30px;
+  }
+  .singleImg{
+     width: 100%;
+     height: 450px;
+  }
+  .hr{
+    border: 1px solid  #f1edf1;
+  }

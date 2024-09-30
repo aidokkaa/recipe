@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.healthyCont{
+width: 100%;
+min-height: 80vh;
+background-color: red;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(https://img.freepik.com/premium-photo/fresh-vegetables-isolated-white-background-flat-lay-food-concept_165773-38.jpg?w=1060);
+padding-bottom: 50px;
+}
+.healthInner{
+    background-size: cover;
+    width: 100%;
+    min-height: 120vh;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.hBorder{
+    width: 70%;
+    height: 75vh;
+    margin: 100px auto;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/033/027/755/non_2x/flat-lay-vegetables-on-white-background-food-and-diet-concept-ai-generated-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 10px grey;
+}
+.hBorderInner{
+    width: 70%;
+    height: 85vh;
+}
+.ecoSpan{
+    margin-top: 30px;
+    margin-left: 60px;
+    display: block;
+    color: #F4A900;
+    font-size: 46px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+.titles{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.title1{
+    font-weight: lighter;
+    letter-spacing: 7px;
+    font-family: 'Montserrat';
+    font-size: 50px;
+}
+.title2{
+    color: green;
+    font-weight: 400;
+    letter-spacing: 7px;
+    font-family: 'Montserrat';
+    font-size: 50px; 
+}
+.logoInner{
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-size: 46px;
+    color: #F4A900;
+    text-align: center;
+    margin-top: 30px;
+}
+.titleInner{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.menuInn{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+  font-size: 20px;
+  color: #5A5a5A;
+  font-family: 'Montserrat';
+  margin-top: 45px;
+}
+.checkbtn{
+    background-image: linear-gradient(45deg,#FFD300,#008000);
+    background-position: center;
+    color: black;
+    margin-top: 30px;
+    outline: none;
+    width: 170px;
+    height: 30px;
+    border-radius:10px;
+    padding: 13px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1;
+    animation: moving 2.5s linear infinite;
+}
+.checkbtn::after{
+    content:'';
+    background-image: inherit;
+    border: inherit;
+    z-index: -1;
+    filter: blur(5px);
+    opacity: 0;
+    transition: all .1s ease; 
+}
+.span{
+    font-size: 17px;
+}
+@keyframes moving{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    20%{
+        filter: hue-rotate(0deg);
+    }
+    40%{
+        filter: hue-rotate(7deg);
+    }
+    60%{
+        filter: hue-rotate(60deg);
+    }
+    80%{
+        filter: hue-rotate(60deg);
+    }
+    100%{
+        filter: hue-rotate(60deg);
+    }
+}
+.modal{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modalInner{
+    background-color: #fff;
+    max-width: 500px;
+    max-height: 300px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    position: absolute;
+    left: 38%;
+    top: 25%;
+    border: 1px solid #F4A900 ;
+}
+.form{
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+}
+.inp{
+   padding: 7px;
+   width: 350px;
+}
+.btnCheck{
+    background-color: #F4A900;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+.burger{
+    display: none;
+}
+.checkbtnNone{
+    display: none;
+}
+.spanBmiGreen{
+  color: green;
+}
+.spanBmiYellow{
+    color: #F4A900;
+  }
+  .spanBmiRed{
+    color: red;
+  }
+@media (max-width: 900px){
+    .healthyCont{
+        padding-bottom: 50px;
+        min-width: 100%;
+    }
+    .healthInner{
+        padding-bottom: 50px;
+    }
+    .ecoSpan{
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    .hBorder{
+        height: 70vh;
+    }
+    .hBorderInner{
+        height: 70vh;
+    }
+    .title1{
+        font-size: 30px;
+    }
+    .title2{
+        font-size: 30px;
+    }
+    .checkbtn{
+      width: 120px;
+      height: 40px;
+      padding: 13px 12px;
+      z-index: 1;
+    }
+    .menuInn{
+        display: none;
+    }
+    .burger{
+        display: block;
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .menu{
+        width: 80%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #F4A900;
+        z-index: 2;
+    }
+    .menu1{
+     width: 200px;
+     margin: 100px auto;
+     display: flex;
+     font-size: 18px;
+     flex-direction: column;
+     text-align: center;
+     gap: 50px;
+     height: 400px;
+    }
+    .closeX{
+        margin-top: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    hr{
+      display: none;
+    }
+    .titles{
+        margin-top: 100px;
+    }
+    .spanAdd{
+        font-size: 16px;
+    }
+    .checkbtn{
+        display: none;
+    }
+    .checkbtnNone{
+        display: block;
+        background-image: linear-gradient(45deg,#FFD300,#008000);
+        background-position: center;
+        color: black;
+        margin-top: 28x;
+        outline: none;
+        width: 130px;
+        height: 25px;
+        border-radius:10px;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 16px;
+        z-index: 1;
+        animation: moving 2.5s linear infinite;
+    }
+}

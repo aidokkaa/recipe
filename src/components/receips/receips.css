@@ -1,0 +1,81 @@
+.recContainer{
+   width: 100%;
+   min-height: 70vh;
+}
+.innerCont{
+ width: 90%;
+ margin: 50px auto;
+ display: flex;
+ justify-content: space-between;
+}
+.filterItems{
+width: 10%;
+height: 370px;
+line-height: 50px;
+}
+.cardItems{
+width: 86%;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 10px;
+}
+.cardItem{
+   width: 280px;
+   min-height: 100px;
+   box-shadow: 2px 2px 2px 2px #F4A900;
+   padding: 5px;
+   border-radius: 15px;
+   margin-top: 40px;
+}
+.itemClass{
+   width: 80%;
+   height: 170px;
+   margin: 0 auto;
+   border-radius: 10px;
+   display: block;
+}
+.filterItem{
+font-size: 17px;
+cursor: pointer;
+}
+.filterItem:hover{
+color: #F4A900;
+}
+.btnItem{
+   margin: 20px;
+   width: 100px;
+   padding: 7px;
+   border-radius: 10px;
+   border: 1px solid #F4A900;
+   background-color: #F4A900;
+   color: white;
+   font-weight: 500;
+   cursor: pointer;
+   margin-left: 10px;
+}
+.tags{
+   margin-top: 20px;
+   margin-left: 10px;
+   color: #F4A900;
+   span{
+      color: gray;
+   }
+}
+.recName{
+   margin-top: 10px;
+   margin-left: 10px;
+}
+@media (max-width: 900px){
+   .filterItems{
+      display: none;
+   }
+   .hrFilter{
+      display: none;
+   }
+   .cardItems{
+      display: flex;
+      justify-content: center;
+      margin: 10px auto;
+   }
+}

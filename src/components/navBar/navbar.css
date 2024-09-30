@@ -1,0 +1,7 @@
+.navContainer{
+    right: 0px;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    background-color: green;
+}

@@ -1,0 +1,60 @@
+.container{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    background-image: url('https://img.freepik.com/premium-photo/cooking-banner-background-with-spices-vegetables-top-view-free-space-your-text_187166-21252.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contInner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.formDiv{
+    margin: 150px auto;
+    border: 2px solid #F4A900;
+    background-color: #F4A900;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 270px;
+    min-height: 300px;
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+.formDiv input{
+    margin: 25px auto;
+    display: block;
+    width: 230px;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid #F4A900;
+    outline: none;
+    color: grey;
+    padding: 10px;
+};
+.validated{
+    color: green;
+}
+.tracker-box{
+    position: absolute;
+    border-radius: 5px;
+    background-color: #F4A900;
+    right: 30%;
+    top: 40%;
+    padding: 10px;
+}
+input{
+    font-size: 16px;
+}
+@media (max-width: 900px){
+    .tracker-box{
+        display: none;
+    }
+}

@@ -1,0 +1,34 @@
+.art{
+    width: 95%;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+}
+.art-title{
+   color: #333333;
+   margin-top: 50px;
+}
+.articles{
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ padding-bottom: 40px;
+}
+.singleArticle{
+ padding: 60px;
+ border-radius: 30px;
+ width: 350px;
+ margin-top: 80px;
+ padding: 10px;
+ min-height: 100px;
+ cursor: pointer;
+ img{
+    height: 220px;
+ }
+}
+.image{
+    margin-bottom: 20px;
+    border-radius: 20px;
+    height: 150px;
+}
+
